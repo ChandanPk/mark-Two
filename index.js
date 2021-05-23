@@ -6,7 +6,7 @@ var score = 0;
 
 const cheerUp = ["Great! keep going", "wow doing well", "right, keep moving", "cheers! move on to next", "Your doing great!"]
 
-var randomCheer = cheerUp[Math.floor(Math.random() * cheerUp.length)];
+var randomCheer = cheerUp[Math.floor(Math.random() * cheerUp.length)]; 
 
 
 function ask(question){
@@ -38,7 +38,7 @@ const questions = [
 
 ]
 
-console.log("--> Let's take a quizzz! <-- \n\n\n Enter your answer with ('a', 'b', 'c', or 'd' and hit enter)\n\n");
+console.log(" --> Let's take a quizzz! <-- \n\n\n Enter your answer with ('a', 'b', 'c', or 'd' and hit enter)\n\n");
 
 for(var i=0; i < questions.length; i++){
   let userAnswer = ask(questions[i].question);
