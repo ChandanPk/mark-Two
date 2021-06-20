@@ -60,4 +60,4 @@ for(var i=0; i < questions.length; i++){
   }
 }
 
-console.log(`Your Score is: ${score} otta `)
+console.log(`Your Score is: ${score} otta 10.`)
