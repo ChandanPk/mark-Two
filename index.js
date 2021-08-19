@@ -3,10 +3,11 @@
 const readlineSync = require('readline-sync');
 
 var score = 0;
+var userName = readlineSync.question("Please enter your name: \n");
 
 const cheerUp = ["Great! keep going", "wow doing well", "right, keep moving", "cheers! move on to next", "Your doing great!"]
 
-var randomCheer = cheerUp[Math.floor(Math.random() * cheerUp.length)]; 
+var randomCheer = cheerUp[Math.floor(Math.random() * 4)]; 
 
 
 function ask(question){
@@ -60,4 +61,4 @@ for(var i=0; i < questions.length; i++){
   }
 }
 
-console.log(`Your Score is: ${score} otta 10.`)
+console.log(`Hey ${userName} you Scored ${score} otta 10.`)
