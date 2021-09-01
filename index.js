@@ -2,12 +2,16 @@
 
 const readlineSync = require('readline-sync');
 
+console.log(" --> Let's take a quizzz! <-- \n\n\n");
+
 var score = 0;
-var userName = readlineSync.question("Please enter your name: \n");
+var userName = readlineSync.question("Please enter your name: ");
+
+console.log("\nEnter your answer with ('a', 'b', 'c', or 'd' and hit enter)\n\n");
 
 const cheerUp = ["Great! keep going", "wow doing well", "right, keep moving", "cheers! move on to next", "Your doing great!"]
 
-var randomCheer = cheerUp[Math.floor(Math.random() * 4)]; 
+var randomCheer = cheerUp[Math.round(Math.random() * 4)]; 
 
 
 function ask(question){
@@ -39,7 +43,6 @@ const questions = [
 
 ]
 
-console.log(" --> Let's take a quizzz! <-- \n\n\n Enter your answer with ('a', 'b', 'c', or 'd' and hit enter)\n\n");
 
 for(var i=0; i < questions.length; i++){
   let userAnswer = ask(questions[i].question);
