@@ -34,7 +34,7 @@ const questions = [
 
   {question: "7. What is the rarest blood type?\n (a)O\n (b)A\n (c)B\n (d)AB-Negative\n ", answer:"d"},
 
-  {question: "8. Areh o saambha kitne aadmi theh?\n (a)Doh sarkaar\n (b)nahi teen\n (c)nahi-nahi chaar sardaar\n (d)shayad ek bhi nahi sardaar\n ", answer:"a"},
+  {question: "8. Areh o saambha kitne aadmi theh?\n (a)Doh sarkaar\n (b)nahi teen\n (c)nahi-nahi chaar sarkaar\n (d)shayad ek bhi nahi sarkaar\n ", answer:"a"},
 
   {question: "9. How many bones are there in the human body?\n (a)205\n (b)201\n (c)209\n (d)206 \n", answer:"d"},
 
