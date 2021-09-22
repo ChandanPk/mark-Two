@@ -9,10 +9,11 @@ var userName = readlineSync.question("Please enter your name: ");
 
 console.log("\nEnter your answer with ('a', 'b', 'c', or 'd' and hit enter)\n\n");
 
-const cheerUp = ["Great! keep going", "wow doing well", "right, keep moving", "cheers! move on to next", "Your doing great!"]
+const cheerUp = ["  Great! keep going", "  woaw! doing well", "  right, keep moving", "  cheers! move on to next", "  Your doing great!"]
 
-var randomCheer = cheerUp[Math.round(Math.random() * 4)]; 
-
+const randomCheer = ()=> {
+  return cheerUp[Math.round(Math.random() * 4)];
+}
 
 function ask(question){
   return readlineSync.question(question);
@@ -48,20 +49,20 @@ for(var i=0; i < questions.length; i++){
   let userAnswer = ask(questions[i].question);
 
   if (userAnswer.toLowerCase() === questions[i].answer){
-    console.log(randomCheer + "\n")
     score++
 
      if (score === 3){
-    console.log("Hurrayy! You crossed level Zero by scoring 2+ points \n");
+    console.log("\n  Hurrayy! You crossed level Zero by scoring 2+ points");
      }else if (score === 5){
-        console.log("Yo! You crossed level two by scoring 4+ points\n");
+        console.log("  Yo! You crossed level two by scoring 4+ points\n");
      }else if (score === 8){
-        console.log("wow! You entered in the Final chapter of the quizz by scoring 7+ points\n");
+        console.log("  wow! You entered in the Final chapter of the quizz by scoring 7+ points\n");
      }
-
+    console.log(randomCheer())
   }else{
-    console.log("opps!, it's ok try the rest\n")
+    console.log("  opps!, it's ok try the rest")
   }
+  console.log(`  Current Score: ${score}\n`)
 }
 
-console.log(`Hey ${userName} you Scored ${score} otta 10.`)
+console.log(`  Hey ${userName} you Scored ${score} otta 10.`)
