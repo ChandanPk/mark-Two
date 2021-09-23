@@ -2,7 +2,7 @@
 
 const readlineSync = require('readline-sync');
 
-console.log(" --> Let's take a quizzz! <-- \n\n\n");
+console.log(" --> Let's take a quizzz! <-- \n\n");
 
 var score = 0;
 var userName = readlineSync.question("Please enter your name: ");
@@ -21,26 +21,25 @@ function ask(question){
 
 const questions = [
 
-  {question: "1. You're 3rd place right now in a race. What place are you in when you pass the person in 2nd place?\n (a)1st\n (b)2nd \n (c)3rd\n (d)None of the above.\n ", answer:"a"},
+  {question: "1. Who is the called the powerhouse in wwe?\n (a)Roman Reings\n (b)Brock Lesnar \n (c)Big Show\n (d)Triple H\n ", answer:"a"},
 
-  {question: "2. How many months have 28 days?\n (a)2\n (b)1\n (c)All of them\n (d)Depends if leap year or not\n ", answer:"c"},
+  {question: "2. Dean Ambrose was also known as?\n (a)Lunitic fringe\n (b)Unstable\n (c)Violence\n (d)All of the above\n ", answer:"d"},
 
-  {question: "3. What is the color of Donald Duck’s bowtie?\n (a)Red\n (b)Yellow\n (c)Blue\n (d)White \n", answer:"a"},
+  {question: "3. Finisher move of Seth Rollings in 2021?\n (a)Pedigiri\n (b)Curb stomp\n (c)sphere\n (d)none of the above \n", answer:"b"},
 
-  {question: "4. Which animal does not appear in the Chinese zodiac?\n (a)Dragon\n (b)Rabit\n (c)Dog\n (d)Hummingbird\n ", answer:"d"},
+  {question: "4. Who is the CEO of WWE industry?\n (a)Shane McMahon\n (b)Vince McMahon\n (c)Stephanie McMahon\n (d)Triple H\n ", answer:"b"},
 
-  {question: "5. Which planet is the hottest?\n (a)venus\n (b)Saturn\n (c)Mercury\n (d)Mars)?\n ", answer:"a"},
+  {question: "5. The team of Dean Ambrose, Roman Reings, Seth Rollings is called\n (a)The hybros\n (b)The Evolution\n (c)The S.H.I.E.D\n (d)The New Day\n ", answer:"c"},
 
-  {question: "6. In which city can you find the Liberty Bell?\n (a)Washington, D.C\n (b)Boston\n (c)Philadelphia\n (d)Manhattan\n ", answer:"c"},
+  {question: "6. Winner of MITB(Money in the Bank) in 2016?\n (a)Seth Rollings\n (b)Barin corbin\n (c)Dean Ambrose\n (d)james ellsworth\n ", answer:"c"},
 
-  {question: "7. What is the rarest blood type?\n (a)O\n (b)A\n (c)B\n (d)AB-Negative\n ", answer:"d"},
+  {question: "7. What was WWE company called before? \n (a)AEW\n (b)WWF\n (c)ROH\n (d)NJPW\n ", answer:"b"},
 
-  {question: "8. Areh o saambha kitne aadmi theh?\n (a)Doh sarkaar\n (b)nahi teen\n (c)nahi-nahi chaar sarkaar\n (d)shayad ek bhi nahi sarkaar\n ", answer:"a"},
+  {question: "8. The winner of John Cena vs Undertaker in Wrestlemania(34)?\n (a)Undertaker\n (b)John Cena\n (c)Draw\n (d)match disqualified\n ", answer:"a"},
 
-  {question: "9. How many bones are there in the human body?\n (a)205\n (b)201\n (c)209\n (d)206 \n", answer:"d"},
+  {question: "9. Which one of these superstars have never won the IC championship?\n (a)Shelton Benjamin\n (b)Rey mysterio\n (c)Big E\n (d)Dean ambrose \n", answer:"c"},
 
-  {question: "10. Fe is the chemical symbol for…?\n (a)Zinc\n (b)Hydrogen\n (c)Fluorine\n (d)Iron \n", answer:"d"}
-
+  {question: "10. Wrestlings are ?\n (a)Fake\n (b)pre-fixed\n (c)100% Real action\n (d)Unsolved Mystory\n", answer:"d"}
 
 ]
 
@@ -65,4 +64,4 @@ for(var i=0; i < questions.length; i++){
   console.log(`  Current Score: ${score}\n`)
 }
 
-console.log(`  Hey ${userName} you Scored ${score} otta 10.`)
+console.log(`  Hey ${userName}, you Scored ${score} otta 10.`)
