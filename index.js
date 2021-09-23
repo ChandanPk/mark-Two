@@ -64,4 +64,4 @@ for(var i=0; i < questions.length; i++){
   console.log(`  Current Score: ${score}\n`)
 }
 
-console.log(`  Hey ${userName}, you Scored ${score} otta 10.`)
+console.log(`  Hey ${userName}, you have Scored ${score} otta 10.`)
